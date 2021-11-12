@@ -144,7 +144,7 @@ public class Crawler {
         String itemOut = "";
         try {
             itemOut = elementIn.attr("src");
-            itemOut = itemOut.replaceAll("[;]", "\\;");
+            itemOut = itemOut.replaceAll(";", ((int)';')+"");
         } catch (Exception e) {
             itemOut = "Fail to get "+segment;
         }
